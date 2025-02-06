@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="d-flex">
+                <a href="index.html" class="logo"><img src="img/5.jpg" alt=""></a>
+                <!-- <span class="mobile-btn">menu</span> -->
+                <nav>
+                    <ul class="d-flex">
+                        <li><a href="game.html">Об игре</a></li>
+                        <li><a href="person.html">Персонажи</a></li>
+                        <li><a href="Death Stranding 2.html">Death Stranding 2</a></li>
+                    </ul>
+                </nav>
+
+                <div class="login-name"></div>
+                <div class="auth">
+                    <span class="auth-trigger">Войти</span>
+                    <form action="" id="login_form">
+                        <div class="form_row single_row">
+
+                            <input type="text" name="login" id="login" pattern="\D{3,20}" required
+                                placeholder="Your Login" />
+                        </div>
+                        <div class="form_row single_row">
+
+                            <input type="password" name="pass" id="pass" pattern="\d{5,20}" required
+                                placeholder="Your password" />
+                        </div>
+                        <div class="chek_row">
+                            <label for="remember">Remember me</label>
+                            <input type="checkbox" name="remember" id="remember">
+                        </div>
+                        <div class="form_row">
+                            <button type="submit">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 id="title"></h1>
+            <!-- <img src="img/1.jpg" alt=""> -->
+            <p>Сегодня поговорим о проекте Kojima Productions <br>Игра имеет смешанные отзовы но тут побруем
+                рассказавать вам о её сторонах которые могут вас заинтересовать</p>
+        </div>
+
+        <video src="img/Video.mp4" class="video" controls="controls" autoplay muted></video>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+
+            <div class="d-flex">
+                <span> <a href="tel:79038664474">+7(903) 866-44-74</a></span>
+                <div class="cosial-links">
+                    <a href="#" target="_blank">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M44.2031 39.8676C42.938 38.5085 41.4231 37.4055 39.7411 36.6189C42.133 35.145 44.2076 33.2096 45.8439 30.9258C47.4801 28.6419 48.6454 26.0551 49.2718 23.3162C49.32 23.1298 49.3303 22.9356 49.302 22.7452C49.2737 22.5547 49.2075 22.3718 49.1072 22.2075C49.0069 22.0431 48.8746 21.9006 48.7181 21.7883C48.5617 21.676 48.3843 21.5964 48.1965 21.554C48.0086 21.5116 47.8142 21.5074 47.6247 21.5416C47.4352 21.5758 47.2545 21.6477 47.0934 21.7531C46.9322 21.8585 46.7939 21.9951 46.6866 22.155C46.5792 22.3149 46.5051 22.4947 46.4686 22.6838C45.8302 25.4881 44.5394 28.1024 42.7011 30.3143C40.8629 32.5263 38.5288 34.2735 35.8886 35.4142C35.5752 35.3625 35.2561 35.3481 34.9428 35.3165V23.0057C34.9347 22.8793 34.9096 22.7545 34.868 22.6349C34.8594 22.5728 34.8469 22.5114 34.8306 22.4509C34.764 22.2991 34.6716 22.16 34.5575 22.0397C34.5431 22.0254 34.5374 22.0052 34.5259 21.9937C34.4229 21.8988 34.3067 21.8194 34.1809 21.758C34.1406 21.735 34.109 21.7005 34.0688 21.6833C33.9724 21.653 33.8731 21.6328 33.7726 21.6229C33.6883 21.5964 33.6017 21.5781 33.5139 21.5682L31.6307 21.5625H31.625C31.2438 21.5617 30.8778 21.7125 30.6077 21.9815C30.3376 22.2505 30.1854 22.6159 30.1846 22.9971C30.1839 23.3784 30.3346 23.7443 30.6036 24.0144C30.8727 24.2846 31.238 24.4367 31.6193 24.4375H32.0562V40.135C32.0562 40.1551 32.0678 40.1724 32.0678 40.1925V43.0617C25.9471 37.8733 21.865 30.6821 20.5476 22.7671C20.4774 22.3947 20.2658 22.064 19.957 21.8442C19.6483 21.6245 19.2665 21.5328 18.8916 21.5884C18.5157 21.6517 18.1804 21.8617 17.9593 22.1723C17.7383 22.4828 17.6496 22.8685 17.7129 23.2444C19.3313 32.8847 24.7079 41.4893 32.6629 47.1701C32.6916 47.1903 32.7261 47.1816 32.752 47.1989C32.9743 47.3513 33.2359 47.4361 33.5053 47.4433C33.7168 47.4406 33.9251 47.3905 34.1147 47.2966L34.1607 47.2851C34.1895 47.2708 34.2068 47.2334 34.2355 47.2161C34.4528 47.0875 34.6315 46.9028 34.753 46.6814C34.8726 46.4759 34.9379 46.2434 34.9428 46.0058V38.1283C37.6851 38.4714 40.2168 39.7764 42.0871 41.8111L46.8222 46.9775C47.08 47.2581 47.4386 47.4248 47.8193 47.441C48.0077 47.449 48.196 47.4198 48.3731 47.3551C48.5503 47.2904 48.7131 47.1914 48.852 47.0638C48.9909 46.9361 49.1034 46.7824 49.1829 46.6113C49.2624 46.4403 49.3075 46.2552 49.3155 46.0667C49.3235 45.8783 49.2943 45.69 49.2296 45.5128C49.1649 45.3357 49.0659 45.1729 48.9382 45.034L44.2031 39.8676ZM43.3349 4.3125H25.6939C8.71125 4.3125 4.3125 8.70263 4.3125 25.6651V43.3061C4.3125 60.2916 8.70263 64.6875 25.6651 64.6875H43.3061C60.2916 64.6875 64.6875 60.2974 64.6875 43.3349V25.6939C64.6875 8.70838 60.2974 4.3125 43.3349 4.3125ZM61.8125 43.3349C61.8125 58.7046 58.6989 61.8125 43.3032 61.8125H25.668C10.2925 61.8125 7.1875 58.6989 7.1875 43.3032V25.668C7.1875 10.2925 10.3011 7.1875 25.6967 7.1875H43.3349C58.7046 7.1875 61.8125 10.3011 61.8125 25.6967V43.3349Z"
+                                fill="white" />
+                        </svg></a>
+                    <a href="#" target="_blank">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M43.3349 4.3125H25.6939C8.71125 4.3125 4.3125 8.70263 4.3125 25.6651V43.3061C4.3125 60.2916 8.70263 64.6875 25.6651 64.6875H43.3061C60.2916 64.6875 64.6875 60.2974 64.6875 43.3349V25.6939C64.6875 8.70837 60.2974 4.3125 43.3349 4.3125ZM61.8125 43.3349C61.8125 58.7046 58.6989 61.8125 43.3032 61.8125H25.668C10.2925 61.8125 7.1875 58.6989 7.1875 43.3032V25.668C7.1875 10.2925 10.3011 7.1875 25.6967 7.1875H43.3349C58.7046 7.1875 61.8125 10.3011 61.8125 25.6967V43.3349Z"
+                                fill="white" />
+                            <path
+                                d="M48.8387 18.4C50.0436 18.4 50.9526 19.4375 50.4664 21.3672L44.5688 48.6531C44.1566 50.5932 42.9622 51.0601 41.3134 50.1575L27.2457 39.959C27.1912 39.9206 27.1467 39.87 27.1161 39.8113C27.0854 39.7527 27.0694 39.6877 27.0694 39.6218C27.0694 39.5559 27.0854 39.4909 27.1161 39.4323C27.1467 39.3737 27.1912 39.3231 27.2457 39.2846L43.4907 24.8843C44.2305 24.2411 43.3322 23.9298 42.3598 24.5108L21.9717 37.137C21.9098 37.1766 21.8396 37.2019 21.7664 37.2109C21.6931 37.2198 21.6187 37.2123 21.5489 37.1889L12.8927 34.5018C10.9691 33.952 10.9691 32.6551 13.326 31.7317L47.9615 18.6179C48.2362 18.4885 48.5345 18.4145 48.8387 18.4Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        let trigger = document.querySelector('.auth-trigger');
+        let myForm = document.forms[0];
+        let loginName = document.querySelector('.login-name');
+        let auth = document.querySelector('.auth')
+
+        trigger.addEventListener('click', () => {
+            myForm.classList.toggle('show')
+        })
+
+        myForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            let login = document.querySelector('#login').value;
+            let rem = document.querySelector('#remember');
+
+
+            loginName.innerHTML = `Hello, ${login} !`;
+
+            auth.style.display = 'none';
+
+            localStorage.setItem('userName', login);
+        })
+
+        let localName = localStorage.getItem('userName')
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localName) {
+                loginName.innerHTML = 'Hi ' + localName
+                auth.style.display = 'none';
+            }
+
+        })
+
+
+        const text = "DEATH STRANDING";
+        const item = document.getElementById('title');
+        let i = 0;
+
+        function printLetter() {
+            if (i < text.length) {
+                item.textContent += text[i];
+                i++;
+                setTimeout(printLetter, 200); 
+            }
+        }
+
+        printLetter();
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
